@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LAN — Projects</title>
+  <link rel="stylesheet" href="style3.css">
+
+  <!-- p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="homepage.js" defer></script>
+
+  <!-- 小猫插画（项目页专用） -->
+  <script src="cat/projectsCat.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Marck+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Marck+Script&family=Send+Flowers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Marck+Script&family=Send+Flowers&family=Trade+Winds&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fuzzy+Bubbles:wght@400;700&family=Marck+Script&family=Send+Flowers&family=Trade+Winds&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<body>
+
+  <div id="catCanvasContainer"
+    style="position: fixed; top: 0; left: 0;
+          width: 100%; height: 100%;
+          pointer-events: none; z-index: 0;">
+  </div>
+
+  <!-- ===== NAV BAR ===== -->
+  <header>
+    <div class="logo">Danrong Zhou</div>
+    <nav>
+      <ul>
+        <li><a href="html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+    <section id="projects-section">
+    <h1 class="projects-title">My Projects</h1>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 — VIDEO -->
+        <div class="project-card">
+        <div class="media-box">
+            <video src="image/project1.mov"controls </video>
+        </div>
+        <h3>Video Essay - Silence in Lust, Caution</h3>
+        <p>In this video silence doesn’t necessarily mean the world around is quiet.
+It means that the characters themselves choose not to speak, even when surrounded by noise 
+It’s how the film communicates what cannot be performed through dialogue: emotion, repression, and power.
+Ang Lee constructs these silences like emotional architecture — long pauses, slow camera movements, and delicate close-ups that force us to watch, listen, and feel what the characters cannot express aloud.
+</p>
+        </div>
+
+        <!-- Project 2 — VIDEO -->
+        <div class="project-card">
+        <div class="media-box">
+            <iframe 
+            src="https://www.youtube.com/embed/ua7S5yO_u-E"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="project-info">
+            <h3>Biopatch+ advertisement</h2>
+            <p>
+            This project was generated using AIGC. It presents a speculative high-tech concept for the future: a small patch that can be embedded under the skin to monitor health conditions in real time. At the same time, it can inject various substances to help maintain the body's well-being. This video is designed as a promotional advertisement for the company behind the technology.
+            </p>
+        </div>
+        </div>
+
+        <!-- Project 3 — IMAGE -->
+        <div class="project-card">
+        <div class="media-box">
+            <img src="image/project3.png" alt="Project 3">
+        </div>
+        <h3>DKU campus redesign plan</h3>
+        <p>This project focuses on redesigning an unused area on the DKU campus. After reviewing a large amount of literature, we created hand-drawn redesign plans and used QGIS to map and synchronize the spatial data.</p>
+        </div>
+
+        <!-- Project 4 — IMAGE -->
+        <div class="project-card project4">
+        <div class="media-box">
+            <img src="image/project4.png" alt="Project 4">
+        </div>
+        <h3>Game in Processing</h3>
+        <p>I created this game using Processing. Players use the keyboard to control the cat, collect fish, and avoid falling trash. The game is designed to be lighthearted, engaging, and slightly challenging, giving players a sense of satisfaction as they successfully gather food while dodging obstacles.</p>
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- RIGHT COLUMN：小猫插画 -->
+    <div class="projects-right">
+      <div id="projectsCatCanvas"></div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+  <p>    🐾 🐾 🐾 🐾 🐾 © 2025 Danrong Zhou — MEDIART213. 🐾 🐾 🐾 🐾 🐾  </p>
+  </footer>
+
+</body>
+</html>
+

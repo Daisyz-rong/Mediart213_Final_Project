@@ -1,0 +1,180 @@
+/* ============================
+   Global
+============================ */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fff3e1, #FFEFE2 40%, #FFF6F1);
+  color: #444;
+}
+
+canvas {
+  display: block;
+}
+
+/* ============================
+   Header
+============================ */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid #FFDBC8;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: "Marck Script", cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  font-weight: bold;
+  color: #FF7D7D;
+}
+
+nav ul {
+  font-family: "Trade Winds", system-ui;
+  font-weight: 200;
+  font-style: normal;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #444;
+}
+
+nav a:hover {
+  color: #FF7D7D;
+}
+
+/* ============================
+   Hero Section
+============================ */
+#hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 90px); /* 扣除导航栏高度 */
+  overflow: hidden;
+}
+
+/* 文字居中 */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+}
+
+.hero-text h1 {
+  font-family: "Marck Script", cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  color: #FF7D7D;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: "Send Flowers", cursive;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.btn {
+  font-family: "Marck Script", cursive;
+  font-style: normal;
+  font-weight: 600;
+  display: inline-block;
+  padding: 12px 22px;
+  background: #FFC6C6;
+  color: #333;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #FF9E9E;
+  color: white;
+}
+
+/* p5 画布容器（全屏覆盖） */
+#catCanvasContainer {
+  position: absolute;
+  inset: 0;
+  z-index: 1; /* 在文字下 */
+}
+
+/* ============================
+   右侧固定线条小猫
+============================ */
+#cat-section {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 70vw;
+  height: 100vh;
+  pointer-events: none; /* 不挡按钮 */
+  z-index: -1; /* 最底层背景 */
+}
+
+
+.site-footer {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;        /* 原来缺少分号 */
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ddd; /* 正确的 border-top 写法 */
+}
+
+/* ---- 随机猫猫语录卡片 ---- */
+.cat-quote-card {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+  left: 50%;             /* 水平居中关键 */
+  transform: translateX(-50%);  /* 把元素往左移动自身宽度的50%，实现真正水平居中 */
+  bottom: 80px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform .15s ease;
+}
+
+.cat-quote-card:hover {
+  transform: translateX(-50%) translateY(-2px);
+}
+
+#p5-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none; 
+  z-index: 9999;
+}
