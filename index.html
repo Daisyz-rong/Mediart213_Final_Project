@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LAN — Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style1.css">
+
+  <!-- p5.js (只需一次) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+
+  <!-- 猫爪首页背景（全局 p5） -->
+  <script src="homepage.js" defer></script>
+
+  <!-- 右侧线条小猫（实例模式） -->
+
+  <script src="sketch1.js" defer></script>
+  <script src="card.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Marck+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Marck+Script&family=Send+Flowers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Marck+Script&family=Send+Flowers&family=Trade+Winds&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fuzzy+Bubbles:wght@400;700&family=Marck+Script&family=Send+Flowers&family=Trade+Winds&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="logo">Danrong Zhou</div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- ===== Hero Section ===== -->
+  <section id="hero">
+
+    <!-- 居中的文字 -->
+    <div class="hero-text">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Digital Media Student • Creative Coding • Interactive Storytelling</p>
+      <a class="btn" href="projects.html">See My Projects</a>
+    </div>
+
+    <!-- 背景画布容器 -->
+    <div id="catCanvasContainer"></div>
+  </section>
+
+
+  <!-- 右侧固定线条小猫 -->
+  <section id="cat-section"></section>
+
+
+  <!-- 猫猫语录卡片 -->
+  <div class="cat-quote-card" onclick="newQuote()">
+    <span id="catQuote">😺 Today is another perfect day for a little harmless loafing, meow</span>
+  </div>
+
+  <footer class="site-footer">
+  <p>    🐾 🐾 🐾 🐾 🐾 © 2025 Danrong Zhou — MEDIART213. 🐾 🐾 🐾 🐾 🐾  </p>
+  </footer>
+
+</body>
+</html>
