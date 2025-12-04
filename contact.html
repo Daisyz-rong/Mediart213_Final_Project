@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact — LAN</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style4.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="homepage.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Marck+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Marck+Script&family=Send+Flowers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Marck+Script&family=Send+Flowers&family=Trade+Winds&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fuzzy+Bubbles:wght@400;700&family=Marck+Script&family=Send+Flowers&family=Trade+Winds&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+
+  <div id="catCanvasContainer"
+    style="position: fixed; top: 0; left: 0;
+          width: 100%; height: 100%;
+          pointer-events: none; z-index: 0;">
+  </div>
+
+
+  <!-- Header / Nav -->
+  <header>
+    <div class="logo">Danrong Zhou</div>
+    <nav>
+      <ul>
+        <li><a href="html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content: left = contact form + board, right = small visual -->
+  <main id="contact-main">
+    <section class="left-col">
+      <h1>Contact & Message Board</h1>
+      <p class="lead">
+        Want to share something with me? Feel free to leave a message — I check them regularly.
+        You can also leave your email or social media handle if you’d like me to reply
+      </p>
+
+      <!-- Contact form -->
+      <form id="msgForm" class="contact-form" autocomplete="off">
+        <label>
+          <span class="label-text">Name</span>
+          <input type="text" id="name" placeholder="Your name" maxlength="40" />
+        </label>
+
+        <label>
+          <span class="label-text">Email (optional)</span>
+          <input type="email" id="email" placeholder="you@example.com" />
+        </label>
+
+        <label>
+          <span class="label-text">Messages</span>
+          <textarea id="message" placeholder="Write a short message..." rows="5" required maxlength="600"></textarea>
+        </label>
+
+        <div class="form-row">
+          <button type="submit" class="btn primary">Send Message</button>
+          <button type="button" id="clearAll" class="btn">Clear All</button>
+        </div>
+      </form>
+
+      <!-- Message board -->
+      <div class="board">
+        <div id="msgsContainer" class="msgs-container">
+          <!-- messages injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Right column: visual / illustration -->
+    <aside class="right-col">
+      <div class="visual-box">
+        <!-- Small decorative illustration (CSS), keeps style consistent -->
+        <div class="cat-doodle">
+          <div class="ear left"></div>
+          <div class="head"></div>
+          <div class="ear right"></div>
+          <div class="paws">
+            <div class="paw"></div>
+            <div class="paw"></div>
+          </div>
+        </div>
+
+        <p class="visual-caption">Thanks for stopping by 🐾</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="contact.js"></script>
+
+  <footer class="site-footer">
+  <p>    🐾 🐾 🐾 🐾 🐾 © 2025 Danrong Zhou — MEDIART213. 🐾 🐾 🐾 🐾 🐾  </p>
+  </footer>
+
+</body>
+</html>
